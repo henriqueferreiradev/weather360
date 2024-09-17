@@ -12,16 +12,29 @@
 
     <section class="weather-card">
         <div class="weather-nav">
-            <div>
-                <h2 id="weather-city"></h2>
-                <p id="weather-date"> </p>
-                <p id="weather-time">2024 | 12:59PM</p>
-            </div>
             <form id="search">
-                <input type="text" placeholder="Escolha uma cidade" id="city_name">
-                <button type="submit">pesquisar</button>
+                <input class="city-input" type="text" placeholder="Escolha uma cidade" id="city_name">
+                <button class="sub-button" type="submit">pesquisar</button>
             </form>
+            <div>
+                <h2 class="weather-city" id="weather-city">Niteroi</h2>
+                <p class="weather-date" id="weather-date">17 de Setembro 2024 | 12:59PM</p>
+            </div>
         </div>
+        <div class="w-temp">
+            <div>
+                <p class="weather-temp" id="temperatura">99</p>
+                <button id="trocar-celsius">ºC</button>
+                <button id="trocar-fahrenheit">ºF</button>
+                <p id="descricao">Nublado</p>
+            </div>
+            <div>
+                <img id="w-icon"src="http://openweathermap.org/img/wn/${iconWeather}@2x.png" alt="">
+            </div>
+        </div>
+ 
+
+ 
 
     </section>
 

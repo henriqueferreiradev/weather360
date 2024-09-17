@@ -13,9 +13,22 @@ document.querySelector("#search").addEventListener('submit', async (event) => {
  
         const results = await fetch(apiUrl);
         const json = await results.json();
+    
         const city = json.name
+        const temp = json.main.temp
+        const temp_max = json.main.temp_max
+        const temp_min = json.main.temp_min
+        const windSpeed = json.wind.speed
+        const icon = json.weather[0].icon
+        console.log(icon)
+        
 
         document.getElementById('weather-city').textContent = city
+        document.getElementById('temperatura').textContent = Math.round(temp)
+        document.getElementById('w-icon').conte
+
+
+
         console.log(json)
  
     }

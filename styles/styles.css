@@ -1,3 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url(./reset.css);
+
+:root {
+    --fonte: "Varela Round";
+    --bg: #0C193B ;
+    --branco: #ffffff;
+}
+body {
+    background: url(../assets/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--branco);
+    font-family: var(--fonte);
+ 
+ 
+}
+
+.weather-card {
+background: rgba( 0, 0, 0, 0.2 );
+   box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+   backdrop-filter: blur(3px);
+   -webkit-backdrop-filter: blur(3px);
+   border-radius: 25px;
+   border: 1px solid rgba(255,255,255,0.18);
+   padding: 4em 6em;
+   margin: 4em 10em;
+
+
+}
 .weather-nav {
     display: flex;
+    justify-content: space-between;
+}
+.city-input {
+    padding: 1em;
+    border-radius: 15px;
+    width: 400px;
+    border: none;
+}
+.sub-button {
+    padding: 1em;
+    border-radius: 15px;
+    width: 150px;
+    margin-left: -50px;
+}
+.weather-city {
+    font-size: 40px;
+}
+.weather-temp {
+    font-size: 120px;
 }
