@@ -11,30 +11,166 @@
 <body>
 
     <section class="weather-card">
-        <div class="weather-nav">
-            <form id="search">
-                <input class="city-input" type="text" placeholder="Escolha uma cidade" id="city_name">
-                <button class="sub-button" type="submit">pesquisar</button>
-            </form>
-            <div>
-                <h2 class="weather-city" id="weather-city">Niteroi</h2>
-                <p class="weather-date" id="weather-date">17 de Setembro 2024 | 12:59PM</p>
+        <div>
+            <div class="div-weather-search">
+                <input class="weather-search" type="search">
+            </div>
+            <div class="weather-general-infos">
+                <div>
+                    
+                    <h2 class="infos-cityname">Madrid</h2>
+                    <p class="infos-rain-chance">Chance de chuva: 0</p>
+                    <h3 class="infos-temp">31º</h3>
+                </div>
+                <img class="infos-img" src="/assets/sun.png" alt="sol">
+            </div>
+            <div class="weather-today-forecast">
+                <h4 class="today-forecast-tittle">Clima Hoje</h4>
+                <ul class="today-forecast-lista">
+                    <li class="lista-por-hora">
+                        <h4 class="lista-hora">6:00 AM</h4>
+                        <img class="lista-img" src="./assets/sun.png" alt="sol">
+                        <h3 class="lista-temp">25º</h3>
+                    </li>
+                    <li class="lista-por-hora">
+                        <h4 class="lista-hora">6:00 AM</h4>
+                        <img class="lista-img" src="./assets/sun.png" alt="sol">
+                        <h3 class="lista-temp">25º</h3>
+                    </li>
+                    <li class="lista-por-hora">
+                        <h4 class="lista-hora">6:00 AM</h4>
+                        <img class="lista-img" src="./assets/sun.png" alt="sol">
+                        <h3 class="lista-temp">25º</h3>
+                    </li>
+                    <li class="lista-por-hora">
+                        <h4 class="lista-hora">6:00 AM</h4>
+                        <img class="lista-img" src="./assets/sun.png" alt="sol">
+                        <h3 class="lista-temp">25º</h3>
+                    </li>
+                    <li class="lista-por-hora">
+                        <h4 class="lista-hora">6:00 AM</h4>
+                        <img class="lista-img" src="./assets/sun.png" alt="sol">
+                        <h3 class="lista-temp">25º</h3>
+                    </li>
+                    <li class="lista-por-hora">
+                        <h4 class="lista-hora">6:00 AM</h4>
+                        <img class="lista-img" src="./assets/sun.png" alt="sol">
+                        <h3 class="lista-temp">25º</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="conditions-lista">
+                <h3 class="conditions-titulo">Condição do Ar</h3>
+                <div class="conditions-dados">
+                    <div class="conditions-infos">
+                        <img class="" src="#" alt="temperatura">
+                        <p>Sensação Térmica</p>
+                        <p>30º</p>
+                    </div>
+                    <div class="conditions-infos">
+                        <img class="" src="#" alt="temperatura">
+                        <p>Sensação Térmica</p>
+                        <p>30º</p>
+                    </div>
+                </div>
+                <div class="conditions-dados">
+                    <div class="conditions-infos">
+                        <img class="" src="#" alt="temperatura">
+                        <p>Sensação Térmica</p>
+                        <p>30º</p>
+                    </div>
+                    <div class="conditions-infos">
+                        <img class="" src="#" alt="temperatura">
+                        <p>Sensação Térmica</p>
+                        <p>30º</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="w-temp">
-            <div>
-                <p class="weather-temp" id="temperatura">99</p>
-                <button id="trocar-celsius">ºC</button>
-                <button id="trocar-fahrenheit">ºF</button>
-                <p id="descricao">Nublado</p>
-            </div>
-            <div>
-                <img id="w-icon"src="http://openweathermap.org/img/wn/${iconWeather}@2x.png" alt="">
-            </div>
+        <div class="seven-days-forecast">
+            <h3>Previsão 7 dias</h3>
+            <ul class="seven-days-forecast-lista">
+                <li class="lista-dia-semana">
+                    <h4 class="dia-semana">Hoje</h4>
+                    <div class="seven-dados">
+                        <img class="lista-img img-seven" src="./assets/sun.png" alt="sol">
+                        <p>Sol</p>
+                    </div>
+                    <div class="seven-dados">
+                        <p class="lista-temp-max">25º</p>
+                        <p class="lista-temp-min">/18º</p>
+                    </div>
+                </li>
+                <li class="lista-dia-semana">
+                    <h4 class="dia-semana">Seg</h4>
+                    <div class="seven-dados">
+                        <img class="lista-img img-seven" src="./assets/sun.png" alt="sol">
+                        <p>Sol</p>
+                    </div>
+                    <div class="seven-dados">
+                        <p class="lista-temp-max">25º</p>
+                        <p class="lista-temp-min">/18º</p>
+                    </div>
+                </li>
+                <li class="lista-dia-semana">
+                    <h4 class="dia-semana">Ter</h4>
+                    <div class="seven-dados">
+                        <img class="lista-img img-seven" src="./assets/sun.png" alt="sol">
+                        <p>Sol</p>
+                    </div>
+                    <div class="seven-dados">
+                        <p class="lista-temp-max">25º</p>
+                        <p class="lista-temp-min">/18º</p>
+                    </div>
+                </li>
+                <li class="lista-dia-semana">
+                    <h4 class="dia-semana">Qua</h4>
+                    <div class="seven-dados">
+                        <img class="lista-img img-seven" src="./assets/sun.png" alt="sol">
+                        <p>Sol</p>
+                    </div>
+                    <div class="seven-dados">
+                        <p class="lista-temp-max">25º</p>
+                        <p class="lista-temp-min">/18º</p>
+                    </div>
+                </li>
+                <li class="lista-dia-semana">
+                    <h4 class="dia-semana">Qui</h4>
+                    <div class="seven-dados">
+                        <img class="lista-img img-seven" src="./assets/sun.png" alt="sol">
+                        <p>Sol</p>
+                    </div>
+                    <div class="seven-dados">
+                        <p class="lista-temp-max">25º</p>
+                        <p class="lista-temp-min">/18º</p>
+                    </div>
+                </li>
+                <li class="lista-dia-semana">
+                    <h4 class="dia-semana">Sex</h4>
+                    <div class="seven-dados">
+                        <img class="lista-img img-seven" src="./assets/sun.png" alt="sol">
+                        <p>Sol</p>
+                    </div>
+                    <div class="seven-dados">
+                        <p class="lista-temp-max">25º</p>
+                        <p class="lista-temp-min">/18º</p>
+                    </div>
+                </li>
+                <li class="lista-dia-semana">
+                    <h4 class="dia-semana">Sab</h4>
+                    <div class="seven-dados">
+                        <img class="lista-img img-seven" src="./assets/sun.png" alt="sol">
+                        <p>Sol</p>
+                    </div>
+                    <div class="seven-dados">
+                        <p class="lista-temp-max">25º</p>
+                        <p class="lista-temp-min">/18º</p>
+                    </div>
+                </li>
+            </ul>
         </div>
- 
 
- 
+
 
     </section>
 
